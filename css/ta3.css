@@ -1,0 +1,708 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+/* Body all */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* untuk all container dan container fluid */
+.container-fluid, .container {
+    min-height: 93vh;
+}
+
+/* navbar section */
+.navbar {
+    height: 100px;
+    transition: .5s;
+    line-height: 100px;
+}
+
+.navbar.black {
+    background-color: rgba(255, 255, 255, 1);
+    height: 75px;
+    bottom: 0;
+    transition: .5s;
+    /* border-bottom: 2px solid rgba(130, 130, 130, 0.5);  */
+    line-height: 75px;
+    box-shadow: 0 5px 7px 3px rgba(0,0,0,0.07);
+}
+
+.navbar.black .navbar-brand img {
+    margin-top: -5px;
+}
+
+.navbar .collapse ul li a.nav-link {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: .3s;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar .collapse ul li a.nav-link:hover, .navbar .navbar-brand:hover {
+    color: #f5a637;
+}
+
+.navbar.black .collapse ul li a.nav-link:hover, .navbar.black .navbar-brand:hover {
+    color: #f5a637;
+}
+
+.navbar.black .collapse ul li a.nav-link, .navbar.black .collapse form button, .navbar.black a.navbar-brand {
+    color: #000;
+}
+
+.navbar.black .collapse .search-kotak .search-tombol {
+    color: black;
+}
+
+.navbar .navbar-brand img {
+    filter: invert(100%) sepia(1%) saturate(193%) hue-rotate(144deg) brightness(116%) contrast(100%);
+    transition: .5s;
+}
+
+.navbar.black .navbar-brand img {
+    filter: none;
+    transition: .5s;
+}
+
+.navbar .collapse .search-kotak {
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    line-height: 40px;
+    transform: translate(-45%,0);
+}
+
+.navbar .collapse form input.search-teks {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    font-size: 16px;
+    float: left;
+    color: white;
+    /* background-color: red; */
+    height: 20px;
+    width: 0px;
+    transition: .5s;
+    font-family: 'Raleway', sans-serif;
+    margin-top: -5px;
+}
+
+.navbar .collapse .search-kotak button {
+    background: none;
+}
+
+.navbar .collapse .search-kotak .search-tombol {
+    display: flex;
+    border-radius: 50%;
+    line-height: 30px;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: -5px;
+}
+
+.navbar .collapse .search-kotak:hover {
+    border: 2px solid white;     
+}
+
+.navbar.black .collapse .search-kotak:hover {
+    border: 2px solid black;
+}
+
+
+.navbar .collapse .search-kotak .search-teks::placeholder {
+    color: #eee;
+}
+.navbar.black .collapse .search-kotak .search-teks::placeholder {
+    color: #151515;
+}
+
+.navbar .collapse .search-kotak:hover .search-teks {
+    width: 250px;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.navbar.black .collapse .search-kotak:hover .search-teks {
+    color: #000;
+}
+
+/* different resolution setting */
+@media screen and ( min-width: 1024px) and ( max-width: 1399px) {
+    .navbar .navbar-brand {
+        margin-right: 41%;
+        transition: .5s;
+    }
+
+    .navbar .collapse .search-kotak:hover .search-teks {
+        width: 200px;
+    }
+
+    .wedo {
+        padding-top: 6rem;
+    }
+
+    /* section what we do hr-nya */
+    .wedo .container-fluid .row:nth-child(1) hr {
+        border-top: 3px solid #000;
+        margin-top: 0px;
+        width: 305px;
+        margin-left: 10px;
+    }  
+
+    /* What We DO dan Paragrafnya  */    
+    .wedo .container-fluid h1 {
+        font-size: 50px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+    }
+
+    .wedo .container-fluid div:nth-child(3) p.tolol {
+        font-size: 10px;
+        padding-top: 0;
+    }
+    
+    .wedo .container-fluid div:nth-child(1) p {
+        padding-top: 5rem;
+        font-size: 35px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: lighter;
+    }
+
+    .wedo .container-fluid .row p span {
+        color: red;
+    }
+
+     /* What we do image 1 */
+     .wedo .container-fluid .image1 img {
+        width: 100%;
+        max-height: 365px;
+    }   
+
+
+    /* hello bitch */
+    .wedo .container-fluid .image2 {
+        border-bottom: 3px solid #000;
+    }
+
+    .wedo .container-fluid .image2 p {
+        font-size: 12px;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        letter-spacing: .5rem;
+    }
+
+    .wedo .row:nth-child(2) {
+        margin-top: 4rem;
+    }
+
+    .best .card-body {
+        display: none;
+    }
+
+    .best .container-fluid .row:nth-child(3) a {
+        color: #fff;
+        padding: 10px 50px;
+        font-size: 20px;
+        border: 2px solid red;
+        text-decoration: none;
+        transition: .3s;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .best .container-fluid button#read1:hover {
+        color: red;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    /* Section Anjing */
+    .anjing2 {
+        display: none;
+    }
+
+    .anjing {
+        padding-top: 3rem;
+    }
+
+    .anjing .carousel .carousel-inner .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Section Book Category */
+    .cardres {
+        display: none;
+    }
+
+    .babi {
+        padding-top: 3rem;
+    }
+
+    .babi .kartu1, .babi .kartu3, .babi .kartu2 {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        transition: .5s ease-in-out;
+    }
+
+    .babi .kartu1{
+        clip-path: polygon(0 0, 100% 0%, 69% 100%, 0% 100%);
+        margin-left: 150px;
+    }
+    
+    .babi .kartu3{
+        margin-left: -150px;
+        clip-path: polygon(31% 0, 100% 0%, 100% 100%, 0 100%);
+    }
+    
+    .babi .kartu2{
+        clip-path: polygon(31% 0%, 100% 0%, 69% 100%, 0% 100%);
+    }
+
+    .babi .kartu1 .back h2, .babi .kartu2 .back h2 ,.babi .kartu3 .back h2  {
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 400px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+    }
+}
+
+@media screen and ( min-width: 1400px) and ( max-width: 2000px) {
+    .navbar .navbar-brand {
+        margin-right: 43.5%;
+        transition: .5s;
+    }
+
+    .navbar .navbar-brand img {
+        justify-content: center;
+    }
+
+    .wedo {
+        padding-top: 6rem;
+    }
+
+    /* section what we do hr-nya */
+    .wedo .container-fluid .row:nth-child(1) hr {
+        border-top: 3px solid #000;
+        margin-top: 0px;
+        width: 440px;
+        margin-left: 15px;
+    }
+
+    /* What We DO dan Paragrafnya  */
+    .wedo .container-fluid .row:nth-child(1) h1 {
+        font-size: 72px;
+        /* font-family: 'Raleway', sans-serif; */
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder;
+    }
+
+    .wedo .container-fluid div:nth-child(3) p.tolol {
+        font-size: 15px;
+        padding-top: 0;
+    }
+    
+    .wedo .container-fluid div:nth-child(1) p {
+        padding-top: 7rem;
+        font-size: 55px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: lighter;
+    }
+  
+    .wedo .container-fluid .row p span {
+        color: red;
+    }
+
+    /* What we do image 1 */
+    .wedo .container-fluid .image1 img {
+        width: 100%;
+        max-height: 550px;
+    }
+
+    /* secton helo bitch gk penting haha */
+    .wedo .container-fluid .image2 {
+        border-bottom: 8px solid #000;
+    }
+
+    .wedo .container-fluid .image2 p {
+        font-size: 17px;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        letter-spacing: .5rem;
+    }
+
+    .wedo .row:nth-child(1) {
+        margin-top: 4rem;
+    }
+
+    .wedo .row:nth-child(2) {
+        margin-top: 8rem;
+    }
+
+    /* Section Anjing */
+    #anjing2 {
+        display: none;
+    }
+
+    .anjing {
+        padding-top: 5rem;
+    }
+
+    .anjing .carousel .carousel-inner .carousel-item img {
+        width: 140%;
+        height: auto;
+    }
+
+    /* Section Book Category */
+    .cardres {
+        display: none;
+    }
+
+    .babi {
+        padding-top: 6rem;
+    }
+
+    .babi .kartu1, .babi .kartu3, .babi .kartu2 {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+        transition: .5s ease-in-out;
+    }
+
+    .babi .kartu1{
+        clip-path: polygon(0 0, 100% 0%, 69% 100%, 0% 100%);
+        margin-left: 200px;
+    }
+    
+    .babi .kartu3{
+        margin-left: -200px;
+        clip-path: polygon(31% 0, 100% 0%, 100% 100%, 0 100%);
+    }
+    
+    .babi .kartu2{
+        clip-path: polygon(31% 0%, 100% 0%, 69% 100%, 0% 100%);
+    }
+
+    .babi .kartu1 .back h2, .babi .kartu2 .back h2 ,.babi .kartu3 .back h2  {
+        font-size: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 500px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+    }
+} 
+
+.hero {
+    height: 100vh;
+    width: 100%;
+}
+
+/* .hero img {
+    width: 100%;
+    height: 100vh;
+} */
+/* .paralax {
+    height: 100vh;
+} */
+
+/* What we do section tidak ada perubahan resolusi */
+.wedo {
+    background-color: #fff;
+    height: 90vh;
+}
+
+.wedo .container-fluid .image2 img {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.wedo .container-fluid .row:nth-child(2) a {
+    font-size: 24px;
+    border: 2px solid red;
+    padding: 10px 50px;
+    text-decoration: none;
+    color: #fff;
+    background-color: red;
+    transition: .3s;
+    font-family: 'Raleway', sans-serif;
+}
+
+.wedo .container-fluid .row:nth-child(2) a:hover {
+    color: red;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.best .row:nth-child(1) h1 {
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.best {
+    background-color: #eee;
+}
+
+.best .container-fluid .row:nth-child(3) a {
+    color: #000;
+    position: relative;
+    padding: 10px 50px;
+    font-size: 25px;
+    /* border: 2px solid red; */
+    text-decoration: none;
+    /* background-color: red; */
+    transition: .3s;
+    font-family: 'Raleway', sans-serif;
+    border: 2px solid #000;
+    z-index: 1;
+}
+
+.best .container-fluid .row:nth-child(3) a:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+
+.best .container-fluid .row:nth-child(3) a:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.best .container-fluid .row:nth-child(3) a:hover:after {
+    top: 0;
+    height: 100%;
+}
+  
+
+.best .container-fluid .row:nth-child(2) .card {
+    transition: .5s;
+    filter: grayscale(50%);
+}
+
+.best .container-fluid .row:nth-child(2) .card:hover {
+    /* box-shadow: 0 0 10px grey; */
+    box-shadow: 10px 10px 5px grey;
+    transform: translate(-5px, -5px);
+    filter: none;
+}
+
+/* .best .container-fluid button {
+    color: #fff;
+    padding: 10px 50px;
+    font-size: 24px;
+    border: 2px solid red;
+    text-decoration: none;
+    background-color: red;
+    transition: .3s;
+    font-family: 'Raleway', sans-serif;
+}
+
+.best .container-fluid button:hover {
+    color: red;
+    background-color: rgba(255, 255, 255, 0);
+} */
+
+.best .container-fluid  i {
+    font-size: 57px;
+    color: #333;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: black;
+}
+
+/* #more1, #dots2 {
+    display: none;
+} */
+
+.list-book1 {
+    background-color: #fff;
+}
+
+
+
+/* Section Footer */
+footer {
+    padding: 10px;
+}
+
+footer .logofooter ul, footer .term ul, footer .copy ul {
+    list-style: none;
+    display: flex;
+}
+
+footer .logofooter .term {
+    padding-top: 20px;
+}
+
+footer .logofooter .term a {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+    font-size: 15px;
+}
+
+footer .logofooter .term a:hover {
+    color: #f5a637;
+}
+
+footer .logofooter .logo {
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+footer .logofooter .logo a {
+    color: white;
+    margin-right: 20px;
+    padding: 5px 10px;
+    transition: .3s;
+}
+
+footer .logofooter .logo a:hover {
+    color: #f5a637;
+}
+
+footer .logofooter .copy {
+    color: white;
+    font-size: 12px;
+    margin-top: -5px;
+}
+
+.list-book1 img {
+    width: 100%;
+    height: auto;
+    transition: .5s;
+    filter: none;
+}
+
+.list-book1 img:hover {
+        /* transform: scale(1.2); */
+    transition: .5s;
+    filter: sepia(100%);
+}
+
+.list-book1 .row:nth-child(1) {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+/* Section Login Page */
+/* .login img {
+    position: absolute;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+} */
+/* .login, .registrasi {
+    background-image: url(img/signin.jpg);
+    padding: 10px;
+    /* background-color: red; */
+
+.anjing {
+    background-color: #eee;
+}
+
+.anjing .carousel a.left span {
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    /* margin-top: 50px; */
+    color: black;
+    transform: scale(2);
+}
+
+.anjing .carousel a.right span {
+    position: absolute;
+    right: -60px;
+    top: 50%;
+    /* margin-top: 50px; */
+    color: black;
+    transform: scale(2);
+}
+
+.carousel-nav-icon {
+    height: 48px;
+    width: 48px;
+ }
+ /* .carousel-item {
+    .col-md-4 {
+       margin: 8px;
+       height: 300px;
+       background-size: cover;
+       background-position: center center;
+    }
+    img {
+    }
+ } */
+
+.babi {
+     position: relative;
+     height: 85vh;
+     /* untuk agar tidak menyisakan height setelah footer */
+     overflow: hidden; 
+ }
+
+/* .babi .kartu1 {
+    left: 10%;
+}
+.babi .kartu2 {
+    left: 40%;
+}
+.babi .kartu1 .front, .babi .kartu2 .front, .babi .kartu3 .front {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* backface-visibility: visible; */
+/* } */
+
+.babi .kartu1 .front img, .babi .kartu2 .front img, .babi .kartu3 .front img {
+    width: 100%;
+    height: 100%;
+    transition: .5s ease-in-out;
+    position: relative;
+    filter: saturate(200%);
+}
+
+.babi .kartu1 .back, .babi .kartu2 .back, .babi .kartu3 .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* backface-visibility: visible; */
+    transition: .5s ease-in-out;
+    opacity: 0;
+}
+
+.babi .kartu1 .back h2 a, .babi .kartu2 .back h2 a, .babi .kartu3 .back h2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.babi .kartu1:hover .front img, .babi .kartu3:hover .front img, .babi .kartu2:hover .front img {
+    transform: scale(1.2);
+    transition: .5s ease-in-out;
+}
+
+.babi .kartu1:hover .back, .babi .kartu2:hover .back,.babi .kartu3:hover .back {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .5);
+}
